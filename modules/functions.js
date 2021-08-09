@@ -34,14 +34,15 @@ module.exports = (client) => {
     // And then they're stuck because the default settings are also gone.
     // So if you do that, you're resetting your defaults. Congrats.
     const defaultSettings = {
-      "prefix": "!",
-      "modLogChannel": "OfficerChat",
+      "prefix": "~",
+      "modLogChannel": "moderator-only",
       "modRole": "Officers",
       "adminRole": "GM",
-      "systemNotice": "true",
+      "systemNotice": "true", // This gives a notice when a user tries to run a command that they do not have permission to use.
+      "commandReply": "true", // Toggle this if you want the bot to ping the executioner or not.
       "welcomeChannel": "welcome",
-      "welcomeMessage": "Welcome {{user}} to the guild server, everyone! We all need a warm welcome sometimes :D",
-      "welcomeEnabled": "True"
+      "welcomeMessage": "Welcome {{user}} to the Exodus guild discord! Feel free to ping druidness or an officer if you need anything.",
+      "welcomeEnabled": "true"
     };
   
     // getSettings merges the client defaults with the guild settings. guild settings in
