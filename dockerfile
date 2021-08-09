@@ -6,7 +6,6 @@ RUN python3 -m ensurepip
 RUN pip3 install --no-cache --upgrade pip setuptools
 RUN mkdir -p /app/exodusbot
 WORKDIR /app/exodusbot
-COPY package-lock.json /app/exodusbot/
 COPY package.json /app/exodusbot
 RUN npm install
 COPY . /app/exodusbot
