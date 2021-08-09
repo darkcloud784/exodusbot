@@ -17,6 +17,7 @@
     "discord.js": "^13.0.1",
     "enmap": "^5.8.5",
     "inquirer": "^8.0.0",
+    "discord-api-types": "^0.22.0",
     "moment": "^2.29.1",
     "moment-duration-format": "^2.3.2",
     "fs": "0.0.1-security"
