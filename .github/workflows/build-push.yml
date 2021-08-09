@@ -20,7 +20,7 @@ jobs:
     
       - name: Docker name
         id: docker_meta
-        uses: docker/metadata-action@v3
+        uses: crazymax/ghaction-docker-meta@v1
         with:
           images: ghcr.io/darkcloud784/exodusbot
           tag-sha: true
