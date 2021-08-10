@@ -42,7 +42,9 @@ module.exports = (client) => {
       "commandReply": "true", // Toggle this if you want the bot to ping the executioner or not.
       "welcomeChannel": "welcome",
       "welcomeMessage": "Welcome {{user}} to the Exodus guild discord! Feel free to ping druidness or an officer if you need anything.",
-      "welcomeEnabled": "true"
+      "welcomeEnabled": "true",
+      "newUserMessage": "Hello {{user}}! I'm the Exodús server bot! I please reply with yes if you are an Exodús guild member. Not not, please reply with no so I can provide you with the appropriate role!",
+      "newUserRolesEnabled": "true"
     };
   
     // getSettings merges the client defaults with the guild settings. guild settings in

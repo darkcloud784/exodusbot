@@ -13,7 +13,9 @@ const defaultSettings = {
   "commandReply": "true",
   "welcomeChannel": "welcome",
   "welcomeMessage": "Say hello to {{user}}, everyone! We all need a warm welcome sometimes :D",
-  "welcomeEnabled": "true"
+  "welcomeEnabled": "true",
+  "newUserMessage": "Hello {{user}}! I'm the Exodús server bot! I please reply with yes if you are an Exodús guild member. Not not, please reply with no so I can provide you with the appropriate role!",
+  "newUserRolesEnabled": "true"
 };
 
 const settings = new Enmap({
