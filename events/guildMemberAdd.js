@@ -1,7 +1,6 @@
 // This event executes when a new member joins a server. Let's welcome them!
 
 const { Message, GuildMemberRoleManager } = require("discord.js");
-client.logger = require("./modules/Logger");
 
 module.exports = (client, member) => {
   // Load the guild's settings
