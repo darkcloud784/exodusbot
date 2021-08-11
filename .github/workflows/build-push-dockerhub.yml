@@ -27,6 +27,8 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           images: darkcloud784/exodusbot
+          tags: |
+            type=sha,enable=true,priority=100,prefix=sha-,suffix=,format=short
 
       - name: Build image
         uses: docker/build-push-action@v2
