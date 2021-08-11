@@ -1,6 +1,7 @@
 // This event executes when a new member joins a server. Let's welcome them!
 
 const { Message, GuildMemberRoleManager } = require("discord.js");
+client.logger = require("./modules/Logger");
 
 module.exports = (client, member) => {
   // Load the guild's settings
@@ -41,6 +42,7 @@ module.exports = (client, member) => {
     })
     .catch(collected =>{
       message.channel.send("Sorry something happened and I didn't understand. Please ping Druidness and let him know!");
+      client.logger.log(`Something went wrong with adding server roles.`, "log");
     })
   })
 };
