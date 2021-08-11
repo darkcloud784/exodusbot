@@ -2,7 +2,7 @@
 
 const { Message, GuildMemberRoleManager } = require("discord.js");
 
-module.exports.welcome = (client, member) => {
+module.exports = (client, member) => {
   // Load the guild's settings
   const settings = client.getSettings(member.guild);
 
@@ -15,7 +15,7 @@ module.exports.welcome = (client, member) => {
   // There's a place for more configs here.
   member.guild.channels.cache.find(c => c.name === settings.welcomeChannel).send(welcomeMessage).catch(console.error);
 
-  if (settings.newUserRolesEnabled !== "true") return;
+ // if (settings.newUserRolesEnabled !== "true") return;
 
   const memberAdd = settings.newUserMessage.replace("{{user}}", member.user.tag);
 
