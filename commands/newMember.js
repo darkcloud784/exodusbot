@@ -1,6 +1,5 @@
-const { codeBlock } = require("@discordjs/builders");
 
-exports.run = async (client, message, [action, key, ...value], level) => { 
+exports.run = async (client, member, args, level) => {
 
 const memberAdd = settings.newUserMessage.replace("{{user}}", member.user.tag);
 
